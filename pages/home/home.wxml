@@ -1,0 +1,18 @@
+<!--pages/home/home.wxml-->
+<view class='container'>
+  <text bindtap='changeText'>{{info}}</text>
+  <view class='table'>
+      <view class="tr">
+            <view class="th">属性</view>
+            <view class="th">值</view>
+      </view>
+      <block wx:for="{{systemInfo}}" wx:for-item="key">
+        <view class='tr'>
+            <view class='th'>{{index}}</view>
+            <view class='th'>{{key}}</view>
+        </view>
+      </block>
+  </view>
+  <button bindtap='getSystemInfo'>获取系统信息</button>
+  <map longitude="113.324520" latitude="23.099994" show-location style="width: 100%; height: 300px;"></map>
+</view>

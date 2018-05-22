@@ -1,0 +1,23 @@
+/* pages/home/home.wxss */
+.table {
+    border: 1px solid #cecece;
+    border-right: 0;
+    border-bottom: 0;
+    /* background-color: #ff9955; */
+    width: 98%;
+}
+.tr {
+  display: flex;
+  justify-content: space-between;
+}
+.th,.td {
+  padding: 10px;
+  border-bottom: 1px solid #cecece;
+  border-right: 1px solid #cecece;
+  text-align: center;
+  width:100%
+}
+.th {
+  font-weight: 400;
+  background-color: #cecece
+}
