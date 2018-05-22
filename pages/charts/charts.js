@@ -1,35 +1,13 @@
-// pages/home/home.js
+// pages/charts/charts.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-      info:'沈芳屹',
-      systemInfo:{},
-      change:false
+  
   },
-  /**
-  * 用户点击修改文字
-  */
-  changeText: function (e) {
-    if(this.data.change){
-      this.setData({ info: '我爱你', change: !this.data.change});
-    }else{
-      this.setData({ info: '沈芳屹', change: !this.data.change});
-    }
-  },
-  /**
-   * 获取系统信息接口
-   */
-  getSystemInfo: function(){
-    var me = this;
-    wx.getSystemInfo({
-      success: function(res) {
-        me.setData({ systemInfo: res});
-      },
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
