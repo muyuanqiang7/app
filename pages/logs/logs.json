@@ -1,4 +1,7 @@
 {
-  "navigationBarTitleText": "查看启动日志",
-  "backgroundTextStyle": true
+  "navigationBarTitleText": "fun",
+  "backgroundTextStyle": true,
+  "usingComponents": {
+    "component-tag-cpt": "../components/cpt/cpt"
+  }
 }

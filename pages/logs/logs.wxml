@@ -1,6 +1,12 @@
 <!--logs.wxml-->
 <view class="container log-list">
-  <block wx:for="{{logs}}" wx:for-item="log">
+  <block wx:for="{{logs}}" wx:key="{{index}}" wx:for-item="log">
     <text class="log-item">{{index + 1}}. {{log}}</text>
   </block>
 </view>
+<view class='container log-list'>
+  <text>三个按钮总和: {{total}}</text>
+</view>
+<component-tag-cpt bind:increment="incrementTotal" num="2" class="cpt" />
+<component-tag-cpt bind:increment="incrementTotal" num="3" class="cpt" />
+<component-tag-cpt bind:increment="incrementTotal" num="5" class="cpt" />

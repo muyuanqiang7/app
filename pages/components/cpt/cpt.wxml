@@ -1,0 +1,2 @@
+<!--pages/components/cpt/cpt.wxml-->
+<button type='default' size='mini' bindtap='__incrementCounter'>{{counter}}</button>
